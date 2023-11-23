@@ -1,5 +1,3 @@
-'use strict';
-
 function getShippingCost(country) {
     let price;
 
@@ -19,8 +17,7 @@ function getShippingCost(country) {
         default:
             return 'Sorry, there is no delivery to your country';
     }
-    const message = `Shipping to ${country} will cost ${price} credits`;
-    return message;
+    return `Shipping to ${country} will cost ${price} credits`;
 }
 
 
